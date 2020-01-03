@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Optimisation POC</title>
+</head>
+
+<body>
+
+    <h1 id="progress">Speed test</h1>
+    <div id="images">
+        <img />
+    </div>
+    <script src="./js/config.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+
+        var img = document.querySelector("#images img");
+        MeasureInternetSpeed().then(() => {
+            img.src = getImagePath("0H9A9953.jpg", 300, 500)
+        }
+        );
+
+    </script>
+</body>
+
+</html>
