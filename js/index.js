@@ -1,15 +1,11 @@
 var testImages = [
-//   "http://via.placeholder.com/510",
-//   "http://via.placeholder.com/510",
-//   "http://via.placeholder.com/510",
-//   "http://via.placeholder.com/510",
   "https://cms.cowrksassets.com/cms/image/Privatestudio_320x240.jpg",
   "https://cms.cowrksassets.com/cms/image/Privatestudio_320x240.jpg",
   "https://cms.cowrksassets.com/cms/image/Privatestudio_320x240.jpg",
   "https://cms.cowrksassets.com/cms/image/Privatestudio_320x240.jpg",
 ]; //the list of test images which will be downloaded for measuring the network speed.
 
-var downloadSize = 357 * 1024; // size of each test image in bytes.
+var downloadSize = 357 * 1024; // known size of each sample image in bytes.
 
 const showMessage = msg => {
   var oProgress = document.getElementById("progress");
